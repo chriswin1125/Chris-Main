@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing:border-box;
+}
+body{
+    background-color: rgb(211, 200, 200);
+
+
+}
+.container{
+    margin:100px auto;
+    padding:30px;
+    max-width: 600px;
+    background-color: rgb(208, 203, 233);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(0,0,0,0.2);
+}
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-style: oblique;
+
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:100%
+
+}
+#la{
+    font-size:20px;
+    margin-left: 165px;
+    margin-bottom:200px 0;
+}
+button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color:black;
+    color: white;
+    transition-duration: 0.2s;
+}
+p{
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: rgb(48, 44, 44);
+}

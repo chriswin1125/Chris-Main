@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <form action="">
+            <label for="ageh" id="la">Enter your Date Of Birth:</label>
+            <input type="date" id="ageh" name="ageh">           
+        </form>
+        <button class="age" onclick="dat()">Check</button>
+        <p id="demo"></p>
+    </div>
+    <script>
+        function dat(){
+        var a=document.getElementById("ageh").value
+        var de=document.getElementById("demo")
+        if(a === ""){
+            alert("Please Enter your Date of Birth")
+        }
+        else{
+        var b=new Date()
+        var c=b.getFullYear()
+        var d=new Date(a)
+        var e=c-d.getFullYear()
+        de.textContent="Your Birthday Age is:"+e  
+        } 
+    }  
+    </script>
+</body>
+</html>

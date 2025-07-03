@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Changing the Password</title>
+</head>
+<body>
+    <div class="pass">
+        <h1>Password Recovery</h1>
+        <h3>Change your password:</h3>
+        <input type="password" id="pas" placeholder="Enter your new password:" required>   
+        <h3>Confirm your password:</h3>
+        <input type="password" id="pasnew" placeholder="Re enter your password:" required><br><br>
+        <button id="sav" onclick="ver()">Save</button>
+        <p id="error"></p>
+    </div>
+    <script>
+        function ver(){
+            var a=document.getElementById("pas").value
+            var b=document.getElementById("pasnew").value
+            var errorMsg=document.getElementById("error")
+            if (a === "" || b === "") {
+            errorMsg.textContent = "All fields are required!";
+            return;
+            }
+            if(a===b){
+                alert("Your password has been changed successfully !!!")
+            }
+            else{
+                alert("Incorrect password !!!")
+            }
+        }
+    </script>
+</body>
+</html>

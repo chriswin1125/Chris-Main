@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=123" />
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+    <h1><span class="material-symbols-outlined">123</span>Guess the number from 1 to 10</h1>
+    <input id="n" type="number"  min="1" max="10" placeholder="Enter the guessing number:......">
+    <button id="result" onclick="rand()"> Check </button>
+    <p id="res"></p>
+    <p id="score">Score=10</p>
+    </div>
+    <script>
+        var a=document.getElementById("n")
+        var res=document.getElementById("res")
+        var sc=document.getElementById("score")
+        var sco=10
+        function rand(){
+            var aval=a.value
+            var randomn=Math.floor(Math.random()*10)+1
+            if(randomn==aval){
+                sco=sco+1
+                sc.textContent="Your score is:"+sco
+                console.log("Right")
+                res.textContent="You guessed the correct number"
+                alert("You are RIGHT")
+            }
+            else{
+                console.log("Wrong")
+                sco=sco-1
+                sc.textContent="Your score is:"+sco
+                res.textContent="You guessed the wrong number"
+                res.textContent="Actual Number:"+randomn
+            }
+
+        }
+    </script>
+</body>

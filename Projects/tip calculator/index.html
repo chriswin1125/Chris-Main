@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <u><i><h1>TIP CALCULATOR</h1></i></u>
+        <form action="">
+            <label for="billval" id="bh">Bill Amount:</label>
+            <input type="number" id="billval" placeholder="Enter the bill amount:">
+            <label for="tipval" id="th">Tip Amount:</label>
+            <input type="number" id="tipval" placeholder="Enter the tip amount:">
+        </form>
+        <button id="but" onclick="calculate()">Calculate</button>
+        <p id="demo"></p>
+    </div>
+    <script>
+        
+        function calculate(){
+            var a=document.getElementById("billval").value
+            var b=document.getElementById("tipval").value
+            var pr=document.getElementById("demo")
+            var c=a*(1+b/100)
+            pr.textContent="Total:"+c
+        }
+
+    </script>
+</body>
+</html>

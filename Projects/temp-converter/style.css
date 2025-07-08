@@ -1,0 +1,52 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    background-color:#f2f2f2;
+}
+#hea{
+    margin-top:-20px ;
+    margin-bottom:40px;
+}
+.container{
+    display:block;
+    justify-items:center;
+    align-items:center;
+    margin:100px auto;
+    padding:60px;
+    max-width:600px;
+    background-color: white;
+    border-radius:20px;
+    box-shadow:0 0 20px rgb(0,0,0,0.2)
+}
+label{
+    display:inline
+}
+.cel{
+    display:flex;
+    white-space: nowrap;
+    margin:20px auto;
+
+}
+.farhen{
+    display:flex;
+    margin: 20px auto;
+    white-space:nowrap;
+    margin-left:10px;
+}
+.kel{
+    display: flex;
+    margin:20px auto;
+    white-space:nowrap;
+}
+input{
+    padding:10px;
+    width:60%;
+    border-radius: 10px;
+    margin-left:20px;
+    cursor:pointer;
+}
+label{
+    font-size: 20px;
+    margin-top:5px;
+}

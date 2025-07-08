@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temprature Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="hea">Temprature Converter
+        </h1>
+        <div class="cel">
+            <label for="ce">Enter the Celsius Value:</label>
+            <input onchange="temp(event)" type="number" name="ce" id="ce">
+        </div>
+        <div class="farhen">
+            <label for="far">Enter the Farhenheit Value:</label>
+            <input onchange="temp(event)" type="number" name="far" id="far">
+        </div>
+        <div class="kel">
+            <label for="ke">Enter the Kelvin Value:</label>
+            <input onchange="temp(event)" type="number" name="ke" id="ke">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
